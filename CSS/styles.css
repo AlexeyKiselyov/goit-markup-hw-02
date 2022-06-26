@@ -7,32 +7,34 @@
 
 
 :root {
---primary-text-color:#757575;
---title-text-color:#212121;
---accent-color:#2196F3;
+--primary-text-color: #757575;
+--title-text-color: #212121;
+--accent-color: #2196F3;
 --primary-white-color: #FFFFFF;
 --secondary-black-color: #000000;
 --bg-color-grey: #2F303A;
 --bg-color-white-grey:#F5F4FA;
 --footer-auth-nav-color: rgba(255, 255, 255, 0.6);
-
 }
+
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
 }
+h1,h2,h3 {
+    color: var(--title-text-color);
+}
+
+
 
 /* header */
+
 .nav .logo {
     color: var(--secondary-black-color);
 }
 
 .nav .logo-web {
     color: var(--accent-color);
-}
-/* шаблон для УДАЛЕНИЯ ТОЧЕК в списках */
-.list {
-    list-style: none;
 }
 
 /* site-nav */
@@ -51,11 +53,13 @@ body {
 }
 
 /* auth-nav */
-.auth-nav-header {
+.auth-nav .link {
     color: var(--primary-text-color);
+    text-decoration: none;
 }
-.auth-nav-header:hover,
-.auth-nav-header:focus {
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
     color: var(--accent-color);
 }
 
@@ -69,29 +73,14 @@ body {
 .hero .button {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    cursor: pointer;
 }
-
 
 /* main */
 /* 1st section */
-.section-title {
-    color: var(--title-text-color);
-}
-.feature-list .title {
-    color: var(--title-text-color);
-}
+.feature-list .title {}
 
-
-.team-list h3 {
-color: var(--title-text-color);
-}
-
-/* buttons */
-
-.button {
-    color: var(--primary-text-color);
-    background-color: var(--primary-white-color);
-}
+.feature-list p {}
 
 /* footer */
 
@@ -108,6 +97,38 @@ color: var(--title-text-color);
 color: var(--accent-color);
 }
 
-.auth-nav-footer {
+.auth-nav-footer .link {
     color: var(--footer-auth-nav-color);
 }
+
+.auth-nav-footer .link:hover,
+.auth-nav-footer .link:focus {
+    color: var(--accent-color);
+}
+
+
+/* шаблон для УДАЛЕНИЯ ТОЧЕК в списках */
+.list {
+    list-style: none;
+}
+
+/* шаблон для скрытия текста */
+.visually-hidden {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ border: 0;
+ padding: 0;
+ white-space: nowrap;
+ clip-path: inset(100%);
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
+
+/* buttons */
+
+/* .button {
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+} */

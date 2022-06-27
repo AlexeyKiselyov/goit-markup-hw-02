@@ -5,6 +5,9 @@
 /* цвет для футера auth-nav белый полупрозрачный rgba(255, 255, 255, 0.6) */
 /* фон темно-серый  #2F303A(герой, футер)  и бело-серый #F5F4FA ("наша команда")*/
 
+/* шрифты */
+/* основной шрифт Roboto 400,500,700,900*/
+/* шрифт для лого Raleway 700 */
 
 :root {
 --primary-text-color: #757575;
@@ -15,11 +18,14 @@
 --bg-color-grey: #2F303A;
 --bg-color-white-grey:#F5F4FA;
 --footer-auth-nav-color: rgba(255, 255, 255, 0.6);
+ 
 }
 
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
+    font-family: "Roboto",sans-serif;
+    letter-spacing: 0.03em;
 }
 h1,h2,h3 {
     color: var(--title-text-color);
@@ -31,6 +37,11 @@ h1,h2,h3 {
 
 .nav .logo {
     color: var(--secondary-black-color);
+    text-decoration: none;
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
 }
 
 .nav .logo-web {
@@ -41,6 +52,11 @@ h1,h2,h3 {
 
 .site-nav .link {
     color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -56,6 +72,10 @@ h1,h2,h3 {
 .auth-nav .link {
     color: var(--primary-text-color);
     text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
 }
 
 .auth-nav .link:hover,
@@ -63,24 +83,64 @@ h1,h2,h3 {
     color: var(--accent-color);
 }
 
+/* main */
 /* hero */
 .hero {
-    background-color: var(--bg-color-grey)
+    background-color: var(--bg-color-grey);
+   
 }
 .hero-title {
     color: var(--primary-white-color);
-}
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    }
 .hero .button {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
 }
 
-/* main */
-/* 1st section */
-.feature-list .title {}
+/* особенности*/
+.feature-list .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
 
-.feature-list p {}
+.feature-list p {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* чем мы занимаемся */
+.activity-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+
+/* наша команда */
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+.team-list h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+.team-list p {
+    font-size: 16px;
+    line-height: 1.18;
+}
 
 /* footer */
 
@@ -89,16 +149,33 @@ h1,h2,h3 {
     background-color: var(--bg-color-grey);
 }
 
+/* логотип */
 .footer .logo {
     color: var(--primary-white-color);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 
 .footer .logo-web {
 color: var(--accent-color);
 }
 
+/* адрес */
+address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* контакты */
 .auth-nav-footer .link {
     color: var(--footer-auth-nav-color);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 .auth-nav-footer .link:hover,
@@ -111,6 +188,12 @@ color: var(--accent-color);
 .list {
     list-style: none;
 }
+
+/* шаблон uppercase */
+.uppercase {
+    text-transform: uppercase;
+}
+
 
 /* шаблон для скрытия текста */
 .visually-hidden {

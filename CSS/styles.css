@@ -25,6 +25,7 @@ body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
     font-family: "Roboto",sans-serif;
+    font-size: 14px;
     letter-spacing: 0.03em;
 }
 h1,h2,h3 {
@@ -54,7 +55,6 @@ h1,h2,h3 {
     color: var(--title-text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
 }
@@ -72,8 +72,7 @@ h1,h2,h3 {
 .auth-nav .link {
     color: var(--primary-text-color);
     text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 500;    
     line-height: 1.15;
     letter-spacing: 0.02em;
 }
@@ -113,12 +112,11 @@ h1,h2,h3 {
 }
 
 .feature-list p {
-    font-size: 14px;
     line-height: 1.71;
 }
 
 /* чем мы занимаемся */
-.activity-title {
+.section-title {
     font-size: 36px;
     line-height: 1.16;
 }
@@ -126,10 +124,6 @@ h1,h2,h3 {
 /* наша команда */
 .team {
     background-color: var(--bg-color-white-grey);
-}
-.team-title {
-       font-size: 36px;
-    line-height: 1.16;
 }
 .team-list h3 {
     font-weight: 500;
@@ -166,16 +160,14 @@ color: var(--accent-color);
 address a{
     color: var(--primary-white-color);
     text-decoration: none;
-    font-style: normal;
-    font-size: 14px;
+    font-style: normal;    
     line-height: 1.7;
 }
 
 /* контакты */
 .auth-nav-footer .link {
     color: var(--footer-auth-nav-color);
-    text-decoration: none;
-    font-size: 14px;
+    text-decoration: none;    
     line-height: 1.7;
 }
 
@@ -213,7 +205,7 @@ address a{
 
 /* ПОРТФОЛИО страница */
 /* кнопки */
-.portfolio-nav-list .button{
+.filter-list .button{
     background-color: var(--bg-color-white-grey);
     color: var(--title-text-color);
     font-family: 'Roboto', sans-serif;
@@ -223,12 +215,15 @@ address a{
     letter-spacing: 0.03em;
     cursor: pointer;
 }
-.portfolio-nav-list .button:hover,
-.portfolio-nav-list .button:focus {
+.filter-list .button:hover,
+.filter-list .button:focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
-
+.filter-list .button.current {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
 /* примеры работ */
 .examples-card {
     text-decoration: none;
